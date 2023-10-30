@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falhamilat Wikron</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><img src="img/EMIL_LOGO.png"></h2>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Profil</a></li>
+                    <li><a href="#galeri">Gallery</a></li>
+                    <li><a href="#aktifitas">Activities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h4>Hallo, I'M</h4>
+            <h1>Falhamilat <span> Wikron</span></h1>
+            <h3>Information System's Student.</h3>
+        </div>
+    </div>
+
+    <!---profile--->
+    <div id="profile">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/pro.jpeg.jpeg">
+                </div>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Falhamilat Wikron, you can call me Emil. I was born on September 7 2003. I was born and raised in Batusangkar, West Sumatra. I am the last child of four siblings. I live in a boarding house on Buluh Cinna street, Panam.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links " onclick="opentab('Education')">Educational Background :</p>
+                    </div>
+                    <div id="Education">
+                        <ul>
+                            <li><span>2010-2016</span><br>SDN 19 Piliang Lima Kaum</li>
+                            <li><span>2016-2019</span><br>MTsN 6 Tanah Datar</li>
+                            <li><span>2019-2022</span><br>SMAN 3 Batusangkar</li>
+                            <li><span>2022-Now</span><br>UIN Sultan Syarif Kasim Riau</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---gallery--->
+    <div id="gallery">
+      <h1 class="judul"> G A L L E R Y </h1>
+      <div>
+          <a href="img/gallery/9.jpeg"></a><img id="foto-gal" src="img/gallery/9.jpeg" alt="">
+          <a href="img/gallery/10.jpg"></a><img id="foto-gal" src="img/gallery/10.jpg" alt="">
+          <a href="img/gallery/5.jpeg"></a><img id="foto-gal" src="img/gallery/5.jpeg" alt="">
+          <a href="img/gallery/8.jpeg"></a><img id="foto-gal" src="img/gallery/8.jpeg" alt="">
+          <a href="img/gallery/11.jpeg"></a><img id="foto-gal" src="img/gallery/11.jpeg" alt="">
+          <a href="img/gallery/12.jpg"></a><img id="foto-gal" src="img/gallery/12.jpg" alt="">
+      </div>
+  </div>
+
+  <!---activities--->
+  <div id="activities">
+    <div class="container">
+        <h1 class="sub-title">My Activities</h1>
+        <div class="list-aktifitas">
+            <div>
+                <i class="fa-solid fa-building-columns"></i>
+                <h2>Studying</h2>
+                <p> I study at Sultan Syarif Kasim State Islamic University, Riau</p>
+            </div>
+
+            <div>
+                <i class="ri-organization-chart"></i>">
+                <h2>Organization</h2>
+                <p>I joined the campus organization, Himasi, as a member of the talent interest and regeneration division.</p>
+            </div>
+
+            <div>
+                <i class="ri-music-2-fill"></i>
+                <h2>do fun things</h2>
+                <P>The activities that I often do in my free time are listening to music and watching Korean dramas.</P>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--- contact --->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="i class="fa-solid fa-paper-plane></i>"></i>falhamilatwikron@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>></i>082268418864</p>
+            </div>
+            <div class="contact-right">
+                <div class="social-icons">
+                    <h1>SOCIAL MEDIA</h1>
+                    <a href="https://instagram.com/_falhamilat?igshid=OGQ5ZDc2ODk2ZA=="><i class='fa-brands fa-instagram'>_falhamilat</i></a>
+                    <a href="https://www.linkedin.com/in/falhamilat-wikron-0768b6261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i>Falhamilat wikron</a>
+                    <a href="falhamilatwikron@gmail.com"><i class='fa-brands fa-mail'></i>falhamilatwikron@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>

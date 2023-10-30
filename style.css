@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg/haykal1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: red;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+h4 {
+    color: white;
+}
+
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3 {
+    color: white;
+}
+
+
+/*-------------About----------*/
+
+#about {
+    padding: 70px 0;
+    color: white;
+    background-image: url(bg/dark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: red;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/* Gallery */
+
+#galeri {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    background-image: url(bg/glry.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.judul {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-weight: lighter;
+}
+
+#foto-gal {
+    height: 550px;
+    padding: 50px;
+    border-radius: 100px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+#foto-gal:hover {
+    transform: translateY(-10px);
+}
+
+
+/* -------------------aktifitas ---------------------*/
+
+#aktifitas {
+    padding: 128px 0;
+    background-image: url(bg/aktif.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+#aktifitas h1 {
+    text-align: center;
+}
+
+.list-aktifitas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+#aktifitas .sub-title {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.list-aktifitas div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.list-aktifitas div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.list-aktifitas div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.list-aktifitas div:hover {
+    background: red;
+    transform: translateY(-10px);
+}
+
+.list-aktifitas div p {
+    font-size: 15px;
+}
+
+
+/* contact */
+
+#contact {
+    background-image: url(bg/dark2.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    padding: 70px 0;
+}
+
+.contact-left h1 {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.contact-left {
+    flex-basis: 50%;
+}
+
+.contact-right {
+    flex-basis: 50%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: red;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons h1 {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.social-icons {
+    margin-left: 100px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ababab;
+    display: table;
+    padding: 18px;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: red;
+    transform: translateY(-5px);
+}
