@@ -10,17 +10,17 @@ html {
 }
 
 body {
-    background: black;
-    color: white;
+    background: rgb(56, 131, 35);
+    color: rgb(234, 241, 233);
 }
 
 #header {
     height: 100vh;
     width: 100%;
-    background-image: url(bg/haykal1.jpeg);
+    background-image: url(img/bg.jpg);
     background-size: cover;
     background-position: center;
-    background-color: white;
+    background-color: rgb(5, 75, 17);
 }
 
 .container {
@@ -44,7 +44,7 @@ nav {
 }
 
 span {
-    color: red;
+    color: rgb(17, 75, 6);
 }
 
 nav ul li {
@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: red;
+    color: rgb(20, 62, 12);
     transition: .4s;
 }
 
@@ -86,12 +86,12 @@ h3 {
 }
 
 
-/*-------------About----------*/
+/*---profile---*/
 
-#about {
+#profile {
     padding: 70px 0;
-    color: white;
-    background-image: url(bg/dark.jpg);
+    color: rgb(19, 1, 1);
+    background-image: url(img/bg2.jpg);
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -119,7 +119,7 @@ h3 {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: white;
+    color: rgb(9, 20, 14);
 }
 
 .tab-titles {
@@ -127,24 +127,7 @@ h3 {
     margin: 20px 0 40px;
 }
 
-.tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
 
-.tab-links::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: red;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
 
 .tab-links.active-link::after {
     width: 50%;
@@ -156,7 +139,7 @@ h3 {
 }
 
 .tab-contents ul li span {
-    color: red;
+    color: rgba(11, 167, 60, 0.628);;
     font-size: 14px;
 }
 
@@ -171,18 +154,18 @@ h3 {
 
 /* Gallery */
 
-#galeri {
+#gallery {
     padding: 50px 0;
-    color: white;
+    color: rgb(25, 4, 4);
     text-align: center;
-    background-image: url(bg/glry.jpeg);
+    background-image: url(img/bg2.jpg);
     background-size: cover;
     background-position: center;
     background-color: white;
 }
 
 .judul {
-    color: white;
+    color: rgb(28, 11, 11);
     font-family: sans-serif;
     text-align: center;
     font-size: 50px;
@@ -202,33 +185,33 @@ h3 {
 }
 
 
-/* -------------------aktifitas ---------------------*/
+/* -----activities ----*/
 
-#aktifitas {
+#activities {
     padding: 128px 0;
-    background-image: url(bg/aktif.jpg);
+    background-image: url(img/bg2.jpg);
     background-size: cover;
     background-position: center;
     background-color: white;
 }
 
-#aktifitas h1 {
+#activities h1 {
     text-align: center;
 }
 
-.list-aktifitas {
+.list-activities {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-#aktifitas .sub-title {
+#activities .sub-title {
     font-size: 50px;
     font-weight: lighter;
 }
 
-.list-aktifitas div {
+.list-activities div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -237,19 +220,19 @@ h3 {
     transition: background 0.5s, transform 0.5s;
 }
 
-.list-aktifitas div i {
+.list-activities div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.list-aktifitas div h2 {
+.list-activities div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.list-aktifitas div:hover {
-    background: red;
+.list-activities div:hover {
+    background: rgb(166, 189, 156);
     transform: translateY(-10px);
 }
 
@@ -261,10 +244,10 @@ h3 {
 /* contact */
 
 #contact {
-    background-image: url(bg/dark2.webp);
+    background-image: url(img/bg.JPG);
     background-size: cover;
     background-position: center;
-    background-color: white;
+    background-color: rgb(56, 62, 56);
     padding: 70px 0;
 }
 
@@ -286,7 +269,7 @@ h3 {
 }
 
 .contact-left p i {
-    color: red;
+    color: rgb(221, 215, 215);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -307,13 +290,14 @@ h3 {
 .social-icons a {
     text-decoration: none;
     font-size: 20px;
-    color: #ababab;
+    color: #403a3a;
     display: table;
     padding: 18px;
     transition: transform 0.5s;
 }
 
 .social-icons a:hover {
-    color: red;
+    color: rgba(2, 56, 8, 0.402);
     transform: translateY(-5px);
 }
+
