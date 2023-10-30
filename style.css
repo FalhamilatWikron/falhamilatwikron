@@ -17,7 +17,7 @@ body {
 #header {
     height: 100vh;
     width: 100%;
-    background-image: url(img/bg.jpg);
+    background-image: url(bg.jpg);
     background-size: cover;
     background-position: center;
     background-color: rgb(5, 75, 17);
@@ -34,17 +34,6 @@ nav {
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
-}
-
-.logo {
-    color: white;
-    font-size: 35px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-span {
-    color: rgb(17, 75, 6);
 }
 
 nav ul li {
@@ -91,7 +80,7 @@ h3 {
 #profile {
     padding: 70px 0;
     color: rgb(19, 1, 1);
-    background-image: url(img/bg2.jpg);
+    background-image: url(bg2.jpg);
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -122,35 +111,6 @@ h3 {
     color: rgb(9, 20, 14);
 }
 
-.tab-titles {
-    display: flex;
-    margin: 20px 0 40px;
-}
-
-
-
-.tab-links.active-link::after {
-    width: 50%;
-}
-
-.tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.tab-contents ul li span {
-    color: rgba(11, 167, 60, 0.628);;
-    font-size: 14px;
-}
-
-.tab-contents {
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
-}
-
 
 /* Gallery */
 
@@ -158,7 +118,7 @@ h3 {
     padding: 50px 0;
     color: rgb(25, 4, 4);
     text-align: center;
-    background-image: url(img/bg2.jpg);
+    background-image: url(bg2.jpg);
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -189,7 +149,7 @@ h3 {
 
 #activities {
     padding: 128px 0;
-    background-image: url(img/bg2.jpg);
+    background-image: url(bg2.jpg);
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -244,7 +204,7 @@ h3 {
 /* contact */
 
 #contact {
-    background-image: url(img/bg.JPG);
+    background-image: url(bg.JPG);
     background-size: cover;
     background-position: center;
     background-color: rgb(56, 62, 56);
